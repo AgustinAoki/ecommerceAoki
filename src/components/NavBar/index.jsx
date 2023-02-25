@@ -16,24 +16,26 @@ export default function NavBAr() {
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='me-auto'>
               <Nav.Link href='#features'>Productos</Nav.Link>
-              <Nav.Link href='#pricing'>Tarjetas de Debito</Nav.Link>
+              <Nav.Link href='#cards'>Tarjetas de Debito</Nav.Link>
               <NavDropdown title='Cuenta' id='collasible-nav-dropdown'>
-                <NavDropdown.Item href='#action/3.1'>Wallet</NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.2'>
+                <NavDropdown.Item href='#account/wallet'>
+                  Wallet
+                </NavDropdown.Item>
+                <NavDropdown.Item href='#account/purchases'>
                   Ultimas compras
                 </NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.3'>
+                <NavDropdown.Item href='#account/security'>
                   Seguridad
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href='#action/3.4'>
+                <NavDropdown.Item href='#account/addreses'>
                   Domicilios
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href='#deets'>Mi perfil</Nav.Link>
-              <Nav.Link eventKey={2} href='#memes'>
+              <Nav.Link href='#profile'>Mi perfil</Nav.Link>
+              <Nav.Link eventKey={2} href='#cart'>
                 <CartWidget />
               </Nav.Link>
             </Nav>
