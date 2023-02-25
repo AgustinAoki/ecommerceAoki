@@ -11,31 +11,31 @@ export default function NavBAr() {
     <div>
       <Navbar collapseOnSelect fixed='top' bg='dark' variant='dark'>
         <Container className='fondo'>
-          <Navbar.Brand href='#home'>Ecommerce</Navbar.Brand>
+          <Navbar.Brand href='home'>Ecommerce Aoki</Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='me-auto'>
-              <Nav.Link href='#features'>Productos</Nav.Link>
-              <Nav.Link href='#cards'>Tarjetas de Debito</Nav.Link>
+              <Nav.Link href='features'>Productos</Nav.Link>
+              <Nav.Link href='cards'>Tarjetas de Debito</Nav.Link>
               <NavDropdown title='Cuenta' id='collasible-nav-dropdown'>
-                <NavDropdown.Item href='#account/wallet'>
+                <NavDropdown.Item href='account/wallet'>
                   Wallet
                 </NavDropdown.Item>
-                <NavDropdown.Item href='#account/purchases'>
+                <NavDropdown.Item href='account/purchases'>
                   Ultimas compras
                 </NavDropdown.Item>
-                <NavDropdown.Item href='#account/security'>
+                <NavDropdown.Item href='account/security'>
                   Seguridad
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href='#account/addreses'>
+                <NavDropdown.Item href='account/addreses'>
                   Domicilios
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href='#profile'>Mi perfil</Nav.Link>
-              <Nav.Link eventKey={2} href='#cart'>
+              <Nav.Link href='profile'>Mi perfil</Nav.Link>
+              <Nav.Link eventKey={2} href='cart'>
                 <CartWidget />
               </Nav.Link>
             </Nav>
