@@ -1,11 +1,19 @@
-export default function ItemListContainer() {
+export default function ItemListContainer({
+  addValueToWidget,
+  substractValueToWidget,
+}) {
   return (
     <div>
-      <ItemsContenedor items={'Aca irian los items'} />
+      <div>
+        <button onClick={addValueToWidget}>
+          <i class='bi bi-cart-check-fill'></i>
+        </button>
+      </div>
+      <div>
+        <button onClick={substractValueToWidget}>
+          <i class='bi bi-cart-check-fill'></i>
+        </button>
+      </div>
     </div>
   );
-}
-
-function ItemsContenedor({ items }) {
-  return <p> {items}</p>;
 }
