@@ -5,8 +5,25 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget';
 import './NavBar.css';
+import { useState } from 'react';
 
 export default function NavBAr() {
+  const [itemCount, setAddItemCount] = useState(0);
+
+  const handleAddAddWidget = () => {
+    setAddItemCount(itemCount + 1);
+  };
+
+  const handleSubstractWidget = () => {
+    setAddItemCount(() => {
+      if (itemCount - 1 > 0) {
+        return itemCount - 1;
+      } else {
+        return 0;
+      }
+    });
+  };
+
   return (
     <div>
       <Navbar collapseOnSelect fixed='top' bg='dark' variant='dark'>
@@ -35,9 +52,15 @@ export default function NavBAr() {
             </Nav>
             <Nav>
               <Nav.Link href='profile'>Mi perfil</Nav.Link>
-              <Nav.Link eventKey={2} href='cart'>
-                <CartWidget />
+              <Nav.Link eventKey={2}>
+                <CartWidget updateText={itemCount} />
               </Nav.Link>
+              <button onClick={handleAddAddWidget}>
+                <i class='bi bi-cart-check-fill'></i>
+              </button>
+              <button onClick={handleSubstractWidget}>
+                <i class='bi bi-cart-check-fill'></i>
+              </button>
             </Nav>
           </Navbar.Collapse>
         </Container>

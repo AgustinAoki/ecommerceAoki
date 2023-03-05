@@ -1,7 +1,7 @@
 export default function ItemListContainer() {
   return (
     <div>
-      <ItemsContenedor items='[ItemListContainer] Aca imagino que irian la lista de items' />
+      <ItemsContenedor items={'Aca irian los items'} />
     </div>
   );
 }
