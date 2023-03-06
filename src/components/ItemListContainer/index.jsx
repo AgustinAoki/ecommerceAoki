@@ -1,19 +1,17 @@
+import Products from '../../mocks/Products';
+
 export default function ItemListContainer({
   addValueToWidget,
   substractValueToWidget,
 }) {
+  const productList = Products;
   return (
     <div>
-      <div>
-        <button onClick={addValueToWidget}>
-          <i class='bi bi-cart-check-fill'></i>
-        </button>
-      </div>
-      <div>
-        <button onClick={substractValueToWidget}>
-          <i class='bi bi-cart-check-fill'></i>
-        </button>
-      </div>
+      <ul>
+        {Products.map((product, index) => (
+          <li key={product.id}>{product.name}</li>
+        ))}
+      </ul>
     </div>
   );
 }

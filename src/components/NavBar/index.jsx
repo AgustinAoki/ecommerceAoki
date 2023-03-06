@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget';
 import './NavBar.css';
-import { useState } from 'react';
 
 export default function NavBAr({ initialValue }) {
   return (
