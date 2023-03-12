@@ -1,0 +1,21 @@
+.item-config {
+  display: inline-block;
+  margin: 2%;
+  width: 25%;
+  align-items: flex-start;
+}
+
+.img-config {
+  width: 200px;
+  height: 200px;
+}
+
+.btn-primary-conteiner {
+  margin-top: 5%;
+}
+
+.btn-primary {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+}
