@@ -6,17 +6,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget';
 import './NavBar.css';
 
-export default function NavBAr({ initialValue }) {
+export default function NavBar() {
   return (
     <div>
       <Navbar collapseOnSelect fixed='top' bg='dark' variant='dark'>
         <Container className='fondo'>
-          <Navbar.Brand href='home'>Ecommerce Aoki</Navbar.Brand>
+          <Navbar.Brand href='/'>Mercado Pokemon</Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='me-auto'>
-              <Nav.Link href='features'>Productos</Nav.Link>
-              <Nav.Link href='cards'>Tarjetas de Debito</Nav.Link>
+              <Nav.Link href='features'>Pokemones</Nav.Link>
               <NavDropdown title='Cuenta' id='collasible-nav-dropdown'>
                 <NavDropdown.Item href='account/wallet'>
                   Wallet
@@ -36,7 +35,7 @@ export default function NavBAr({ initialValue }) {
             <Nav>
               <Nav.Link href='profile'>Mi perfil</Nav.Link>
               <Nav.Link eventKey={2}>
-                <CartWidget updateText={initialValue} />
+                <CartWidget updateText={0} />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

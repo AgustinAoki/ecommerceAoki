@@ -3,10 +3,9 @@ import Products from '../../mocks/Products';
 import Item from '../Item';
 import './ItemListContainer.css';
 
-export default function ItemListContainer() {
+export default function ItemListContainer({ isFilteringByType, type }) {
   // const products = new Promise((resolve, reject) => {});
-
-  const [produts, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
   const productList = Products;
 
   useEffect(() => {
@@ -15,15 +14,28 @@ export default function ItemListContainer() {
     );
 
     productsPromise
-      .then((response) => setProducts(response))
+      .then((response) => {
+        if (isFilteringByType) {
+          const productsFiltered = response.filter(
+            (product) => product.type === type
+          );
+          console.log(type);
+          console.log(productsFiltered);
+          setProducts(productsFiltered);
+        } else {
+          setProducts(response);
+        }
+      })
       .catch((err) => console.log(err));
   }, []);
 
   return (
-    <div className='item-container'>
-      {productList.map((product, index) => (
-        <Item product={product}></Item>
-      ))}
+    <div class='container text-center'>
+      <div class='row'>
+        {products.map((product, index) => (
+          <Item product={product}></Item>
+        ))}
+      </div>
     </div>
   );
 }

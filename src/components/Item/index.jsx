@@ -3,14 +3,12 @@ import './Item.css';
 
 export default function Item({ product }) {
   return (
-    <div className='item-config'>
+    <div className='col-3 card'>
       <div>
-        <img className='img-config' src={product.img}></img>
-      </div>
-      <h4>{product.name}</h4>
-      <div>{product.description}</div>
-      <div className='btn-primary-conteiner'>
-        <button className='btn-primary'>Atrapalo ya!</button>
+        <img src={product.img} class='img-fluid' alt='...' />
+        <h4>{product.name}</h4>
+        <p>{product.description}</p>
+        <button class='btn btn-danger'>Atrapalo ya!</button>
       </div>
     </div>
   );

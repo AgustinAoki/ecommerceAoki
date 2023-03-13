@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import Root from './routes/root';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ItemRoot from './routes/item';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Root />,
   },
   {
-    path: '/hola',
-    element: <div>Hola</div>,
+    path: '/type/:id',
+    element: <Root />,
+  },
+  {
+    path: '/pokemon/:id',
+    element: <ItemRoot />,
   },
 ]);
 

@@ -1,8 +1,9 @@
 .item-config {
   display: inline-block;
+  border-radius: 2px 2px 2px 2px;
   margin: 2%;
   width: 25%;
-  align-items: flex-start;
+  border-color: black;
 }
 
 .img-config {
@@ -17,5 +18,11 @@
 .btn-primary {
   background-color: red;
   color: white;
-  font-weight: bolder;
+  font-weight: 10;
+}
+
+.card {
+  margin-top: 3%;
+  margin-right: 3%;
+  padding: 1%;
 }
