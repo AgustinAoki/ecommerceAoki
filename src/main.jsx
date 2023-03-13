@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <Root />,
   },
   {
-    path: '/pokemon/:id',
+    path: '/product/:id',
     element: <ItemRoot />,
   },
 ]);

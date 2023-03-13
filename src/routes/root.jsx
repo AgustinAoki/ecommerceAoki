@@ -8,8 +8,7 @@ function Root() {
   const params = useParams();
 
   const isFilteringByType = Boolean(params.id);
-  console.log({ params });
-  console.log({ params });
+
   return (
     <div>
       <NavBar />
