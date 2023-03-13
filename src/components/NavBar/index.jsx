@@ -38,7 +38,7 @@ export default function NavBar() {
             <Nav>
               <Nav.Link href='profile'>Mi perfil</Nav.Link>
               <Nav.Link eventKey={2}>
-                <CartWidget updateText={0} />
+                <CartWidget updateText={3} />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

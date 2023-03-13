@@ -18,6 +18,26 @@ const router = createBrowserRouter([
     path: '/product/:id',
     element: <ItemRoot />,
   },
+  {
+    path: 'type/fire/product/:id',
+    element: <ItemRoot />,
+  },
+  {
+    path: 'type/water/product/:id',
+    element: <ItemRoot />,
+  },
+  {
+    path: 'type/electric/product/:id',
+    element: <ItemRoot />,
+  },
+  {
+    path: 'type/legend/product/:id',
+    element: <ItemRoot />,
+  },
+  {
+    path: 'type/plant/product/:id',
+    element: <ItemRoot />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

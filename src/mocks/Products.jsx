@@ -7,6 +7,10 @@ export default [
     stock: 5,
     type: 'plant',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png',
+    detail:
+      'Desde que nace, crece alimentándose de los nutrientes que contiene la semilla de su lomo. ',
   },
   {
     id: 2,
@@ -16,6 +20,10 @@ export default [
     stock: 5,
     type: 'plant',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png',
+    detail:
+      ' La luz del sol lo fortalece y hace que le crezca el capullo que tiene en el lomo. ',
   },
   {
     id: 3,
@@ -25,6 +33,10 @@ export default [
     stock: 5,
     type: 'plant',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png',
+    detail:
+      ' La flor que tiene en el lomo libera un delicado aroma, que tiene un efecto relajante en combate. ',
   },
   {
     id: 4,
@@ -34,6 +46,10 @@ export default [
     stock: 5,
     type: 'fire',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
+    detail:
+      ' Este Pokémon nace con una llama en la punta de la cola. Si se le apagara, fallecería. ',
   },
   {
     id: 5,
@@ -43,6 +59,10 @@ export default [
     stock: 5,
     type: 'fire',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png',
+    detail:
+      ' Si se exalta en combate, expulsa intensas llamaradas que incineran todo a su alrededor. ',
   },
   {
     id: 6,
@@ -52,6 +72,10 @@ export default [
     stock: 5,
     type: 'fire',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png',
+    detail:
+      ' Sus potentes alas le permiten volar a una altura de 1400 m. Escupe llamaradas que llegan a alcanzar temperaturas elevadísimas. ',
   },
   {
     id: 7,
@@ -61,6 +85,10 @@ export default [
     stock: 5,
     type: 'water',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png',
+    detail:
+      ' Cuando se siente en peligro, se esconde en su caparazón y escupe chorros de agua por la boca. ',
   },
   {
     id: 8,
@@ -70,6 +98,10 @@ export default [
     stock: 5,
     type: 'water',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png',
+    detail:
+      ' Utiliza hábilmente sus peludas orejas y la cola para mantener el equilibrio al nadar. ',
   },
   {
     id: 9,
@@ -79,6 +111,10 @@ export default [
     stock: 5,
     type: 'water',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png',
+    detail:
+      ' Dispara chorros de agua a través de los cañones de su caparazón, capaces de agujerear incluso el acero. ',
   },
   {
     id: 10,
@@ -88,6 +124,10 @@ export default [
     stock: 5,
     type: 'electric',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png',
+    detail:
+      ' Cuando varios de estos Pokémon se juntan, su energía puede causar fuertes tormentas. ',
   },
   {
     id: 11,
@@ -97,6 +137,10 @@ export default [
     stock: 5,
     type: 'electric',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png',
+    detail:
+      ' Si las bolsas de sus mejillas se cargan por completo de electricidad, se le ponen las orejas de punta. ',
   },
   {
     id: 12,
@@ -106,6 +150,10 @@ export default [
     stock: 5,
     type: 'electric',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png',
+    detail:
+      ' Una de las aves legendarias. Dicen que, cuando este Pokémon frota las alas, cae al instante un relámpago del cielo. ',
   },
   {
     id: 13,
@@ -115,7 +163,12 @@ export default [
     stock: 5,
     type: 'legend',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png',
+    detail:
+      ' Su ADN es casi el mismo que el de Mew. Sin embargo, su tamaño y carácter son muy diferentes. ',
   },
+
   {
     id: 14,
     name: 'Mew',
@@ -124,6 +177,10 @@ export default [
     stock: 5,
     type: 'legend',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png',
+    detail:
+      ' Si se observa a través de un microscopio, puede distinguirse cuán corto, fino y delicado es el pelaje de este Pokémon. ',
   },
   {
     id: 15,
@@ -133,5 +190,9 @@ export default [
     stock: 5,
     type: 'legend',
     img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png',
+    imgDetail:
+      'https://assets.pokemon.com/assets/cms2/img/pokedex/full/249.png',
+    detail:
+      ' La fuerza que tiene Lugia en las alas es devastadora; con nada que las bata es capaz de derribar edificios enteros. Por eso mismo, prefiere vivir donde no haya nadie, en lo más profundo del mar. ',
   },
 ];

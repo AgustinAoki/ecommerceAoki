@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 export default function Item({ product }) {
   return (
-    <div className='col-3 card'>
+    <div className='col-5 card'>
       <div>
         <img src={product.img} className='img-fluid' alt='...' />
         <h4>{product.name}</h4>
