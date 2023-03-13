@@ -4,9 +4,7 @@ import Item from '../Item';
 import './ItemListContainer.css';
 
 export default function ItemListContainer({ isFilteringByType, type }) {
-  // const products = new Promise((resolve, reject) => {});
   const [products, setProducts] = useState([]);
-  const productList = Products;
 
   useEffect(() => {
     const productsPromise = new Promise((resolve, reject) =>
@@ -19,21 +17,19 @@ export default function ItemListContainer({ isFilteringByType, type }) {
           const productsFiltered = response.filter(
             (product) => product.type === type
           );
-          console.log(type);
-          console.log(productsFiltered);
           setProducts(productsFiltered);
         } else {
           setProducts(response);
         }
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [type]);
 
   return (
-    <div class='container text-center'>
-      <div class='row'>
+    <div className='container text-center'>
+      <div className='row'>
         {products.map((product, index) => (
-          <Item product={product}></Item>
+          <Item product={product} key={product.id}></Item>
         ))}
       </div>
     </div>

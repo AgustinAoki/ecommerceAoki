@@ -51,7 +51,7 @@ export default [
       ' Escupe un fuego tan caliente que funde las rocas. Causa incendios forestales sin querer. ',
     stock: 5,
     type: 'fire',
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png',
+    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png',
   },
   {
     id: 7,

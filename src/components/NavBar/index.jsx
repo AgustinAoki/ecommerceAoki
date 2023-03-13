@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget';
 import './NavBar.css';
+import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
   return (
@@ -15,20 +16,22 @@ export default function NavBar() {
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='me-auto'>
-              <Nav.Link href='features'>Pokemones</Nav.Link>
-              <NavDropdown title='Cuenta' id='collasible-nav-dropdown'>
-                <NavDropdown.Item href='account/wallet'>
-                  Wallet
+              <Nav.Link>Pokemones</Nav.Link>
+              <NavDropdown title='Tipos' id='collasible-nav-dropdown'>
+                <NavDropdown.Item>
+                  <NavLink to={'/type/plant'}>Planta</NavLink>
                 </NavDropdown.Item>
-                <NavDropdown.Item href='account/purchases'>
-                  Ultimas compras
+                <NavDropdown.Item>
+                  <NavLink to={'/type/fire'}>Fuego</NavLink>
                 </NavDropdown.Item>
-                <NavDropdown.Item href='account/security'>
-                  Seguridad
+                <NavDropdown.Item>
+                  <NavLink to={'/type/water'}>Agua</NavLink>
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href='account/addreses'>
-                  Domicilios
+                <NavDropdown.Item>
+                  <NavLink to={'/type/electric'}>Electricos</NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <NavLink to={'/type/legend'}>Legendarios</NavLink>
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
