@@ -5,38 +5,40 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget';
 import './NavBar.css';
+import { NavLink } from 'react-router-dom';
 
-export default function NavBAr() {
+export default function NavBar() {
   return (
     <div>
       <Navbar collapseOnSelect fixed='top' bg='dark' variant='dark'>
         <Container className='fondo'>
-          <Navbar.Brand href='home'>Ecommerce Aoki</Navbar.Brand>
+          <Navbar.Brand href='/'>Mercado Pokemon</Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='me-auto'>
-              <Nav.Link href='features'>Productos</Nav.Link>
-              <Nav.Link href='cards'>Tarjetas de Debito</Nav.Link>
-              <NavDropdown title='Cuenta' id='collasible-nav-dropdown'>
-                <NavDropdown.Item href='account/wallet'>
-                  Wallet
+              <Nav.Link>Pokemones</Nav.Link>
+              <NavDropdown title='Tipos' id='collasible-nav-dropdown'>
+                <NavDropdown.Item>
+                  <NavLink to={'/type/plant'}>Planta</NavLink>
                 </NavDropdown.Item>
-                <NavDropdown.Item href='account/purchases'>
-                  Ultimas compras
+                <NavDropdown.Item>
+                  <NavLink to={'/type/fire'}>Fuego</NavLink>
                 </NavDropdown.Item>
-                <NavDropdown.Item href='account/security'>
-                  Seguridad
+                <NavDropdown.Item>
+                  <NavLink to={'/type/water'}>Agua</NavLink>
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href='account/addreses'>
-                  Domicilios
+                <NavDropdown.Item>
+                  <NavLink to={'/type/electric'}>Electricos</NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <NavLink to={'/type/legend'}>Legendarios</NavLink>
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav>
               <Nav.Link href='profile'>Mi perfil</Nav.Link>
-              <Nav.Link eventKey={2} href='cart'>
-                <CartWidget />
+              <Nav.Link eventKey={2}>
+                <CartWidget updateText={3} />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -1,0 +1,28 @@
+.item-config {
+  display: inline-block;
+  border-radius: 2px 2px 2px 2px;
+  margin: 2%;
+  width: 25%;
+  border-color: black;
+}
+
+.img-config {
+  width: 200px;
+  height: 200px;
+}
+
+.btn-primary-conteiner {
+  margin-top: 5%;
+}
+
+.btn-primary {
+  background-color: red;
+  color: white;
+  font-weight: 10;
+}
+
+.card {
+  margin-top: 3%;
+  margin-right: 3%;
+  padding: 1%;
+}

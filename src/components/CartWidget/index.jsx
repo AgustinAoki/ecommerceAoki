@@ -1,8 +1,8 @@
 import './CartWidget.css';
-export default function CartWidget() {
+export default function CartWidget({ updateText }) {
   return (
     <div>
-      <i class='bi bi-cart-check-fill'>4</i>
+      <i className='bi bi-cart-check-fill'>{updateText}</i>
     </div>
   );
 }
